@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
   def create
     @item = Item.new(item_params)
     @item.user = current_user
-    @new_item = Item.new
+    @new_item = Item.new           # to clear the item form
 
     if @item.save
       flash[:notice] = "Todo Added!"
