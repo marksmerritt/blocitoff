@@ -1,2 +1,2 @@
-$('.js-items').append("<%= j render(@item) %>");
+$('.js-items').append("<%= j render(@item) %>").fadeIn("slow");
 $('.new-item').html("<%= j render partial: 'items/form', locals: { item: @new_item } %>");
