@@ -21,6 +21,7 @@ gem 'figaro'
 gem 'devise'
 gem 'faker'
 gem 'bootstrap-sass'
+gem 'whenever', require: false
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.6.0'
